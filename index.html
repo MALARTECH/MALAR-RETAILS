@@ -1,16 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MALAR RETAILS</title>
-</head>
-<body>
-    <h1>MALAR RETAILS</h1>
-    <img width="300px" src="Malar Retails logo.jpg" alt="">
-    <p>Pls Design Ma</p>
-    <p>Pls Continue Ma</p>
 
-    
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="Mahin Retails" href="./Assets/mahin logo.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <title>MAHIN RETAILS</title>
+
+
+  <!-- Normal css -->
+  <link rel="stylesheet" href="Style.css">
+
+
+  <!-- Bootstrap -->
+  <!-- <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+  <!-- lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+
+
+  <!-- Tailwind css -->
+  <script src="Tailwind css.js"></script>
+  <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+
+
+  <!--  Header -->
+  <div class="2xl:container mx-auto bg-green head position-sticky">
+    <div class="w-[90%] mx-auto grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 p-3 text-white">
+      <div class="flex gap-6">
+        <p>Home | </p>
+        <div class="flex gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-map-pin">
+            <path
+              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <p><span class="font-bold">Delivery to:</span>Town Home-123456 |</p>
+
+        </div>
+
+      </div>
+      <div class="flex gap-5 sm:justify-start  lg:justify-end">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-headset">
+          <path
+            d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+          <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+        </svg>
+
+        <p>Call:+91-8300545185</p>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="2xl:container mx-auto bg-white">
+      <div class="w-[90%] mx-auto">
+        <div class="flex justify-between ">
+
+          <!-- logo -->
+          <div class="">
+            <img class="w-60 " src="Assets/mahin logo.jpg" alt="Malar clean green">
+          </div>
+
+          <div class=" items-center mt-20" id="menubar">
+            <ul class=" flex gap-10 mr-15 items-center  mt-30 md:justify-center text-xl " id="menuList">
+              <li class="hover:text-white  font-bold  cursor-pointer lg:hover:bg-violet-900  px-3 py-1"><a href="#">Home
+                </a></li>
+              <li class="hover:text-white  font-bold cursor-pointer hover:bg-violet-900 px-3 py-1"><a href="#">About</a>
+              </li>
+              <li class="hover:text-white  font-bold cursor-pointer hover:bg-violet-900 px-3 py-1"><a href="#">Deals</a>
+              </li>
+
+              <li class="hover:text-white  font-bold cursor-pointer lg:hover:bg-violet-900 px-3 py-1"><a href="#"> New
+                  Arrials</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-icon md:hidden mt-20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menu"
+              class="lucide lucide-align-justify " onclick="toggleMenu()">
+              <path d="M3 12h18" />
+              <path d="M3 18h18" />
+              <path d="M3 6h18" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- first -->
+  <script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px ";
+
+    function toggleMenu() {
+      if (menuList.style.maxHeight = "0px ") {
+        menuList.style.maxHeight = "500px ";
+      }
+      else {
+        menuList.style.maxHeight = "0px ";
+      }
+
+    }
+  </script>
+
+
+  <!-- search bar -->
+  <div class="2xl:container mx-auto">
+    <div class="w-[90%] mx-auto md:justify-center sm:justify-center  md:mr-10  sm:items-center my-5 ml-10 flex gap-3">
+      <input aria-autocomplete="list" role="searchbox" aria-haspopup="true"
+        class="ng-tns-c48-14 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input border rounded-md text-center ng-star-inserted"
+        autocomplete="off" type="search" id="search" aria-controls="pr_id_11_list" aria-expanded="false"
+        aria-activedescendant="p-highlighted-option" placeholder="Search our products" size="35">
+      <button
+        class="bg-orange-400 text-white rounded-md p-1 hover:shadow-lg shadow-[0_0_5px] hover:transition-all duration-300 hover:scale-110"
+        id="Search">Search</button>
+
+      <!-- shopping Card -->
+      <div class="flex">
+        <a href="Shopping_card.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-shopping-basket hover:text-orange-400 ml-15">
+            <path d="m15 11-1 9" />
+            <path d="m19 11-4-7" />
+            <path d="M2 11h20" />
+            <path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4" />
+            <path d="M4.5 15.5h15" />
+            <path d="m5 11 4-7" />
+            <path d="m9 11 1 9" />
+          </svg>
+          <!-- <span class="cart-count">0</span> -->
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- section -->
+
+  <div class="2xl:container mx-auto " id="hero">
+    <div class="w-[99%] mx-auto grid md:grid-cols-2 lg:grid-cols-2">
+      <div class="text-center gap-5" id="first-sec">
+        <h1 class="text-center     font-bold text-5xl text-violet-900 " id="h1">
+          " Make love with juicy fruits and vegetables.”
+        </h1>
+        <p class="text-center text-orange-500 mt-10 text-2xl">
+          " A health journey is the sum of small efforts repeated day in and day out.<br>
+          Make love with juicy fruits and vegetables ".
+
+
+        </p>
+        <a href="Vegetable/veg.html">
+          <button
+            class="text-center mt-8 bg-orange-400  hover:not-focus:bg-violet-900 px-5 py-1 text-white rounded-full  ">Shop
+            Now</button>
+        </a>
+
+
+      </div>
+      <div id="sec-img" class="flex justify-end">
+        <img src="Assets/All fruit & veg.png" alt="image">
+
+      </div>
+    </div>
+  </div>
+  <!-- purchase -->
+  <div class="2xl:container mx-auto p-3 bg-orange-50 purchase">
+    <h1 class="text-center font-bold p-3 text-violet-900 text-3xl" id="h1">Purchase By Category </h1>
+    <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-5">
+
+      <!-- vegetables  -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]  ">
+        <a href="Vegetable/veg.html">
+          <img src="Assets/1.vegetables.jpg" alt="card-img" class="rounded-xl h-40">
+          <p class="  font-bold text-[18px] leading-[22px] text-black text-center mt-5"> Vegetables</p>
+        </a>
+      </div>
+
+      <!-- Fresh Fruits -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Fruits/Fruits.html">
+          <img src="Assets/2.Fruits.jpg" alt="card-img" class="rounded-xl h-40">
+          <p class=" font-bold text-[18px] leading-[22px] text-black text-center mt-5">Fresh Fruits</p>
+        </a>
+      </div>
+
+      <!-- Dry nuts -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Dry Nuts/nuts.html">
+          <img src="Assets/Dry Fruits & Nuts Image M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="  font-bold text-[18px] leading-[22px] text-black text-center mt-3">Dry Fruit & Nuts</p>
+        </a>
+      </div>
+
+      <!-- Pules _Legumes -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+        <a href="Pulses_Legumse/Pules_Legumse.html">
+          <img src="Assets/Pules & Legumse image M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center mt-8">Pulses & Legumes</p>
+        </a>
+      </div>
+
+      <!-- Rice _Grain -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px] ">
+        <a href="Rice & Grains/Rice_Grain.html">
+          <img src="Assets/Rice Images M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center ">Rice Varieties & Grains</p>
+        </a>
+      </div>
+
+
+      <!-- Masala & Spices -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+        <a href="Masala & Spices/Masala_spices.html">
+          <img src="Assets/Masala image m.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class=" font-bold text-[18px] leading-[22px] text-black text-center">Masalas & Spieces</p>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Oil & Ghee -->
+    <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Edible Oil & Ghee/Oil_Ghee.html">
+          <img src="Assets/Ghee & Oil Image M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center">Edible Oil & Ghee </p>
+        </a>
+      </div>
+
+      <!-- Salt Sugar flours -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+        <a href="Salt_Flour/salt_Flour.html">
+          <img src="Assets/Salt Sugar image M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class=" font-bold text-[18px] leading-[22px] text-black text-center">Salt , Sugar & Flours</p>
+        </a>
+      </div>
+
+      <!-- cream lotion -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Cream_Lotion/Cream_Lotion.html">
+          <img src="Assets/skin care.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center"> Cream & Lotion</p>
+        </a>
+      </div>
+
+
+      <!-- Dairy Product -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Dairy Product/Dairy_Product.html">
+          <img src="Assets/Dairy product image.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center">Dairy Products</p>
+        </a>
+      </div>
+
+      <!-- Healthy Product -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Health Drinks/Health Drink.html">
+          <img src="Assets/Health drinks image.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center">Health Drinks</p>
+        </a>
+      </div>
+
+      <!-- pooja product -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+
+        <a href="Pooja Products/Pooja.html">
+          <img src="Assets/Pooja/poojai Image M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center">Pooja Products</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- beverage product -->
+    <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5 mb-5">
+
+
+
+
+
+      <!--Dental Care  -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Dental Care/Dental care.html">
+          <img src="Assets/Dental care.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center"> Dental Care</p>
+        </a>
+      </div>
+
+
+
+
+      <!-- Instant food -->
+      <!-- <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <img src="Assets/14. Instant Foods.jpg" alt="card-img" class="rounded-xl h-45">
+        <p class="font-bold text-[18px] leading-[22px] text-black text-center">Instant Foods</p>
+
+      </div> -->
+
+      <!-- child care -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Child Care/child care.html">
+          <img src="Assets/Baby care image M.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center">Child Care</p>
+        </a>
+      </div>
+
+
+      <!--  -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="House Cleaning Product/Laundry_product.html">
+          <img src="Assets/cleaning img.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center">Laundry Product</p>
+        </a>
+      </div>
+
+      <!--Grocery  -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Grocery/Grocery.html">
+          <img src="Assets/Grocery/Grocery Image M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center mt-10">Grocery</p>
+        </a>
+      </div>
+
+      <!-- womens care -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+        <a href="Womens Care/womens.html">
+          <img src="Assets/Womens care/Personal care.jpeg" alt="card-img" class="rounded-xl h-55">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center mt-12"> Womens Care</p>
+        </a>
+      </div>
+      <!-- personal care -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Bakery Items/Bakery.html">
+          <img src="Assets/Snacks image.jpg" alt="card-img" class="rounded-xl h-45">
+          <p class="  font-bold text-[18px] leading-[22px] text-black  text-center">Bakery Items & Snacks</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5 mb-5">
+
+
+      <!-- Stationeries -->
+      <!-- <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <img src="" alt="card-img" class="rounded-xl h-45">
+        <p class="font-bold text-[18px] leading-[22px] text-black text-center">Stationeries</p>
+
+      </div> -->
+
+
+      <!-- beverage -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+        <a href="Beverages/Beverage.html">
+          <img src="Assets/Beverage drinks M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="  font-bold text-[18px] leading-[22px] text-black  text-center mt-8">Beverages</p>
+        </a>
+      </div>
+
+      <!-- bath soap -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+        <a href="Bath soap Product/Bath Soap.html">
+          <img src="Assets/soaps image.jpeg" alt="card-img" class="rounded-xl h-50">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center mt-10">Bath Soap Products</p>
+        </a>
+      </div>
+
+
+
+      <!-- Meat -->
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+        <a href="Meat/Meat.html">
+          <img src="Assets/Meat Image M.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center mt-10">Meat Items</p>
+        </a>
+      </div>
+
+      <!-- food -->
+
+
+      <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+        <a href="Food/Food.html">
+          <img src="Assets/Food/saiva food.jpeg" alt="card-img" class="rounded-xl h-45">
+          <p class="font-bold text-[18px] leading-[22px] text-black text-center mt-10"> Food</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--4  -->
+  <!-- <div class="2xl:container mx-auto">
+    <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-4">
+      <div class="nasa-icon-box">
+        <div class="box nasa-flex flex-column jc text-center">
+          <div class="box-img nasa-flex jc">
+            <img loading="lazy" decoding="async" src="" alt="Alway Fresh" width="128" height="128">
+          </div>
+          <div class="box-text">
+            <span class="box-title fs-22 font-bold margin-bottom-10 nasa-block">
+              Always Fresh
+              Veg & Fruit </span>
+            <p class="box-desc">
+              We should all be Eating Vegetables and Fruits
+              as if our lives Depend on it because they do.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="padding-left-30 padding-right-30 mobile-margin-bottom-50 large-3 nasa-col columns">
+        <div class="nasa-icon-box">
+          <div class="box nasa-flex flex-column jc text-center">
+            <div class="box-img nasa-flex  justifys-center"><img loading="lazy" decoding="async"
+                src="https://nellai.co.in/wp-content/uploads/2022/10/organic4-icon2.png" alt="100% Organic" width="128"
+                height="128"></div>
+            <div class="box-text">
+              <span class="box-title fs-22 nasa-bold margin-bottom-10 font-bold nasa-block">
+                100% Organic </span>
+              <p class="box-desc">
+                Where I live, I am surrounded by fresh, organic food, so I eat really well.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="padding-left-30 padding-right-30 mobile-margin-bottom-50 large-3 nasa-col columns">
+        <div class="nasa-icon-box">
+          <div class="box nasa-flex flex-column jc text-center">
+            <div class="box-img nasa-flex jc"><img loading="lazy" decoding="async"
+                src="https://nellai.co.in/wp-content/uploads/2022/10/organic4-icon3.png" alt="Premium Quality"
+                width="128" height="128"></div>
+            <div class="box-text">
+              <span class="box-title fs-22 font-bold margin-bottom-10 nasa-block">
+                Premium Quality </span>
+              <p class="box-desc">
+                “Quality is more important than quantity. One home run is much better than two doubles.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="desktop-margin-top-140 tablet-margin-top-0 padding-left-30 padding-right-30 mobile-margin-bottom-50 large-3 nasa-col columns">
+        <div class="nasa-icon-box">
+          <div class="box nasa-flex flex-column jc text-center">
+            <div class="box-img nasa-flex jc"><img loading="lazy" decoding="async"
+                src="https://nellai.co.in/wp-content/uploads/2022/10/organic4-icon4-1.png" alt="Healthy Cooking"
+                width="128" height="128"></div>
+            <div class="box-text">
+              <span class="box-title fs-22 font-bold margin-bottom-10 nasa-block">
+                Healthy Foods</span>
+              <p class="box-desc">
+                Your diet is a bank account.
+                Good food choices are good investments </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+
+  <!-- Fooder  -->
+
+  <div class="2xl:container mx-auto    bg-orange-200    text-xl Fooder">
+
+    <div class="w-[90%] mx-auto grid grid-cols-1  md:grid-cols-4 lg:grid-cols-4 mb-10">
+
+      <div class=" ">
+        <img class="w-60 mt-10" src="./Assets/mahin_logo-removebg-preview.png" alt="">
+      </div>
+      <div>
+        <h1 class="font-bold mt-20 gap-5 mb-5 text-violet-900">Address</h1>
+        <p class="">
+          No 23A ,Old Busstand Road , <br>
+          Opp MMS Transport ,<br>
+          Aruppukottai-626101...
+
+        </p>
+      </div>
+
+
+
+      <div class="mt-20">
+        <p class="font-bold text-violet-900">Need Help</p>
+        <div class="flex gap-3 my-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-phone-call">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+            <path d="M14.05 6A5 5 0 0 1 18 10" />
+          </svg>
+          <p>96292 23169 , 96294 23169</p>
+
+        </div>
+        <div class="flex gap-3 my-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-mail">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <p>malarretails24@gmail.com</p>
+        </div>
+
+      </div>
+      <!-- social media -->
+      <div class="mt-20 ">
+
+        <p class="font-bold mb-5 text-violet-900">Social Media</p>
+        <a href="https://www.facebook.com/profile.php?id=61573545305568">
+          <div class="hover:text-orange-500 flex gap-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-facebook-icon lucide-facebook">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+            <p>Facebook</p>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/it_malar25?igsh=MTZobG0xZWcwMmI2aQ==">
+          <div class="hover:text-orange-500 flex gap-5 mt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-instagram-icon lucide-instagram">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+            <p>Instagram</p>
+          </div>
+        </a>
+        <a href="">
+          <div class="hover:text-orange-500 flex gap-5 mt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-youtube-icon lucide-youtube">
+              <path
+                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+              <path d="m10 15 5-3-5-3z" />
+            </svg>
+            <p> You Tube</p>
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </div>
+    <div class="2xl:container mx-auto bg-black pb-20 pt-3">
+      <div class="w-[90%] mx-auto ">
+        <div class="mt-10">
+          <p class="font-bold text-center mb-10 text-violet-400">Category</p>
+          <p class="text-center">
+            <a class="hover:text-orange-500 text-white" href="Vegetable/veg.html"> Vegetables |</a> <a
+              class="hover:text-orange-500 text-white" href="Fruits/Fruits.html">
+              Fruits |</a> <a class="hover:text-orange-500 text-white" href="Dry Nuts/nuts.html">
+              Dry Fruits & Nuts |</a> <a class="hover:text-orange-500 text-white"
+              href="Pulses_Legumse/Pules_Legumse.html">
+              Pules & Legumse |
+            </a> <a class="hover:text-orange-500 text-white" href="Rice & Grains/Rice_Grain.html">
+              Rice Varieties & Grain |
+            </a>
+            <a class="hover:text-orange-500 text-white" href="Masala & Spices/Masala_spices.html">
+              Masala & Spices
+
+            </a><br>
+            <a class="hover:text-orange-500 text-white" href="Edible Oil & Ghee/Oil_Ghee.html">Oil & Ghee |
+            </a><a class="hover:text-orange-500 text-white" href="Salt_Flour/salt_Flour.html">
+              Salt ,Sugar And Flour |
+            </a> <a class="hover:text-orange-500 text-white" href="Cream_Lotion/Cream_Lotion.html">
+              Cream & Lotions |
+            </a> <a class="hover:text-orange-500 text-white" href="Dairy Product/Dairy_Product.html">
+              Dariy Product |
+
+            </a> <a class="hover:text-orange-500 text-white" href="Health Drinks/Health Drink.html">
+              Healthy Drinks |
+
+            </a>
+            <a class="hover:text-orange-500 text-white" href="Pooja Products/Pooja.html">
+              Poojai Products
+
+
+            </a>
+            <br>
+            <a class="hover:text-orange-500" href="Child Care/child care.html">Child Care |
+
+            </a> <a class="hover:text-orange-500 text-white" href="House Cleaning Product/Laundry_product.html">
+              Laundry Product |
+
+            </a> <a class="hover:text-orange-500 text-white" href="Grocery/Grocery.html">
+              Grocery |
+
+            </a> <a class="hover:text-orange-500 text-white" href="Womens Care/womens.html">
+              Womens Care |
+
+
+            </a> <a class="hover:text-orange-500 text-white" href="Bakery Items/Bakery.html">
+              Bakery Items & Snacks |
+
+
+            </a>
+            <a class="hover:text-orange-500 text-white" href="Dental Care/Dental care.html">
+              Dental care
+
+
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Java script  -->
+  <script src="script.js"></script>
+
+  <!--Lucide Icons  -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
 </body>
+
 </html>

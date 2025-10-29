@@ -1,0 +1,59 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#quantity a:hover {
+    background-color: orange;
+  }
+
+
+  /* dropdown */
+  .custom-select {
+    position: relative;
+    width: 200px;
+  }
+  
+  .select-selected {
+    /* background-color: #f1f1f1; */
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  
+  .select-items div,
+  .select-selected {
+    color: #000;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 99;
+    width: 100%;
+    display: none;
+  }
+  
+  .select-items div {
+    padding: 10px;
+  }
+  
+  .select-items div:hover {
+    background-color: rgb(255, 192, 75); /* <-- Hover color here */
+    color: white;
+  }
+
+/* Add To Card Button */
+
+ /* @media (max-width:640px) {
+  .add-to-cart {
+    
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
+} */

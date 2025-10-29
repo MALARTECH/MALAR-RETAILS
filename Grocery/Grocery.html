@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+
+    <!-- Normal css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-----FontAwsome icon------>
+    <script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+    <!-- Tailwind css -->
+    <script src="../Tailwind css.js"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+
+    <div class="2xl:container mx-auto bg-violet-100 p-3">
+        <h1 class="text-center font-bold p-3 text-5xl  text-violet-900">Grocery</h1>
+        <div class="w-[99%] mx-auto">
+            <img src="../Assets/Grocery/grocery.png" alt="vegetables Banner" class="">
+        </div>
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-5 ">
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/fennel seeds.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500  text-center">Fennel seeds</p>
+                <p class="text-center">சோம்பு
+                </p>
+                <p>₹<span id="price">12.00</span></p>
+                <label for="quantity"></label>
+                <select id="quantity" name="quantity">
+                    <option value="3" data-price="12.00">3 Pcs</option>
+                    <option value="6" data-price="24.00">6 Pcs</option>
+                    <option value="9" data-price="36.00">9 Pcs</option>
+                    <option value="12" data-price="48.00">12 Pcs</option>
+                </select>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/cinnamon.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="  font-bold text-[18px] leading-[22px] text-orange-500 text-center">Cinnamon</p>
+                <p class="text-center">பட்டை
+                </p>
+                <p>₹<span id="price">12.00</span></p>
+                <label for="quantity" class="w-120px select"></label>
+                <select id="quantity" name="quantity">
+                    <option value="3" data-price="12.00">3 Pcs</option>
+                    <option value="6" data-price="24.00">6 Pcs</option>
+                    <option value="9" data-price="36.00">9 Pcs</option>
+                    <option value="12" data-price="48.00">12 Pcs</option>
+                </select>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Clove.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Clove</p>
+                <p class="text-center">கிராம்பு
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/Bay leaf.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">Bay leaf</p>
+                <p class="text-center text-sm">பிரியாணி இலை
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Mustard.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">Mustard
+                </p>
+                <p class="text-center text-sm">கடுகு
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px] ">
+
+                <img src="../Assets/Grocery/red chilli.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="  font-bold text-[18px] leading-[22px] text-orange-500   text-center">Red chilli</p>
+                <p class="text-center">சிவப்பு மிளகாய்
+
+                </p>
+                <p>₹<span id="price">12.00</span></p>
+                <label for="quantity"></label>
+                <select id="quantity" name="quantity">
+                    <option value="15" data-price="15.00">150g</option>
+                    <option value="25" data-price="25.00">500g</option>
+                    <option value="50" data-price="50.00">1kg</option>
+                    <option value="12" data-price="48.00">12 Pcs</option>
+                </select>
+
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/fenugreek.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">
+                    fenugreek</p>
+                <p class="text-center">வெந்தயம்
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Cumin.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Cumin</p>
+                <p class="text-center">சீரகம்
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Pepper.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Pepper</p>
+                <p class="text-center">மிளகு
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Lg Asafoetida cake.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Lg Asafoetida cake</p>
+                <p class="text-center">
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/LG Powder.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">LG Powder</p>
+                <p class="text-center">
+                </p>
+
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Tumkur tarmarid.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Tumkur tarmarid</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+
+        </div>
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/cardamom.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">Cardamom
+                </p>
+                <p class="text-center">ஏலக்காய்
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black "><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Dry ginger.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Dry ginger</p>
+                <p class="text-center">சுக்கு
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Haldi Sticks.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Haldi Sticks</p>
+                <p class="text-center">
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/Chilli Powder.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Chilli Powder</p>
+                <p class="text-center">மிளகாய் தூள்
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Turmeric powder.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Turmeric powder</p>
+                <p class="text-center">மஞ்சள் தூள்
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Jaggery.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Jaggery</p>
+                <p class="text-center">
+                </p>
+
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+
+            </div>
+
+        </div>
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Macronic pipe.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">
+                    Macronic pipe</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Maggi nodeles masala.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Maggi nodeles masala</p>
+                <p class="text-center">
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/yippee magic masala noodles.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Yippee magic masala noodles</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/Quaker Oats.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Quaker Oats</p>
+                <p class="text-center text-sm"></p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black "><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/AVT premim coff powder.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">AVT premim coff powder</p>
+                <p class="text-center"></p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/BRU Green Lable.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">BRU Green Lable</p>
+                <p class="text-center"></p>
+
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+
+        </div>
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/BRU Instant.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">
+                    BRU Instant</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Nescafe Sunrise Instant Coff Jar.jpg" alt="card-img"
+                    class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Nescafe Sunrise Instant Coff Jar
+                </p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Nescafe Classic Coff Powder-Jar.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Nescafe Classic Coff Powder-Jar
+                </p>
+                <p class="text-center">
+
+
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/3 rose natural care.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">3 Rose natural care</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/3 rose tea top star.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">3 Rose tea top star</p>
+                <p class="text-center"></p>
+                <button type="button" style="width: 100%;"
+                    class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                        class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/brooke bond red lable.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">
+                    Brooke Bond Red Lable</p>
+                <p class="text-center text-sm">
+
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+        </div>
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/taj mahal tea powder.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">
+                    Taj Mahal Tea Powder</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+               
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Tata tea chakra gold.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Tata Tea Chakra Gold</p>
+                <p class="">
+
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black "><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/lipton green tea honey lemon.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Lipton green tea honey lemon</p>
+                <p class="text-center"></p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                 </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/lipton green tea tulasi.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Lipton green tea tulasi</p>
+                <p class="text-center">
+                </p>
+                 <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Anil Ragi Semiya.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Anil Ragi Semiya</p>
+                <p class="text-center text-sm"></p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+
+                
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/Anil Roasted Semiya.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Anil Roasted Semiya</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+        </div>
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Ravai.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Ravai</p>
+                <p class="text-center">ரவை
+
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                 </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/kelloggs chocos.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">kelloggs chocos</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Kissam jam.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Kissam jam</p>
+                <p class="text-center">
+
+
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+               
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Appalam.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Appalam</p>
+                <p class="text-center">அப்பளம்
+
+
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Color Appalam.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Color Appalam</p>
+                <p class="text-center">கலர் அப்பளம்
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black "><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/Wheel Chips.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Wheel Chips</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+
+        </div>
+
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Sugar.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Sugar</p>
+                <p class="text-center">சர்க்கரை
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Sago.jpg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">Sago
+                </p>
+                <p class="text-center text-sm">
+
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/Kelloggs corn flakes.jpg " alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Kelloggs corn flakes</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black "><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/bambino semiya.jpeg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Bambino semiya</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+               
+                
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/anil samba rava.jpeg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Anil samba rava</p>
+                <p class="text-center"></p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                 </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/naga samba rava.jpeg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Naga samba rava</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+        </div>
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5 gap-5">
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5    hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/AVT gold cup tea.jpeg" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">AVT gold cup tea</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5  hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/narasus instant strong.jpeg" alt="card-img" class="rounded-xl h-40">
+                <p class=" font-bold text-[18px] leading-[22px] text-orange-500 text-center">Narasus instant strong
+                </p>
+                <p class="text-center text-sm">
+
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/narasus pure instant.jpeg " alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center">Narasus pure instant</p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black "><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                
+            </div>
+
+
+
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px] ">
+                <img src="../Assets/Grocery/" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center"></p>
+                <p class="text-center">
+                </p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+               
+            </div>
+            <div class="space-y-2 rounded-xl bg-white shadow-lg p-5   hover:shadow-[0_0_15px]">
+                <img src="../Assets/Grocery/" alt="card-img" class="rounded-xl h-40">
+                <p class="font-bold text-[18px] leading-[22px] text-orange-500 text-center"></p>
+                <p class="text-center"></p>
+                <button type="button" style="width: 100%;"
+                class="btn btn-warning mt-auto shop-item-button  py-2 text-white   rounded-full     bg-orange-500 cursor-pointer hover:shadow-[0_0_5px] hover:text-black"><i
+                    class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+               
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- js-->
+    <script src="script.js"></script>
+</body>
+
+</html>

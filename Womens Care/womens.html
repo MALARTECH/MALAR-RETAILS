@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens Care</title>
+
+    <!-- Normal css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../Style.css">
+</head>
+
+<body>
+    <!-----FontAwsome icon------>
+    <script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+
+
+    <!-- Tailwind css -->
+    <script src="../Tailwind css.js "></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+
+
+    <!--  Header -->
+
+    <nav>
+        <div class="2xl:container mx-auto bg-white">
+            <div class="w-[90%] mx-auto">
+                <div class="flex justify-between ">
+
+                    <!-- logo -->
+                    <div class="">
+                        <img class="w-60 " src="../Assets/mahin logo.jpg" alt="Malar clean green">
+                    </div>
+
+                    <div class=" items-center mt-20" id="menubar">
+                        <ul class=" flex gap-10 mr-15 items-center  mt-30 md:justify-center text-xl " id="menuList">
+                            <li class="hover:text-white  font-bold  cursor-pointer lg:hover:bg-violet-900  px-3 py-1"><a
+                                    href="#">Home
+                                </a></li>
+                            <li class="hover:text-white  font-bold cursor-pointer hover:bg-violet-900 px-3 py-1"><a
+                                    href="#">About</a>
+                            </li>
+                            <li class="hover:text-white  font-bold cursor-pointer hover:bg-violet-900 px-3 py-1"><a
+                                    href="#">Deals</a>
+                            </li>
+
+                            <li class="hover:text-white  font-bold cursor-pointer lg:hover:bg-violet-900 px-3 py-1"><a
+                                    href="#"> New
+                                    Arrials</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-icon md:hidden mt-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            id="menu" class="lucide lucide-align-justify " onclick="toggleMenu()">
+                            <path d="M3 12h18" />
+                            <path d="M3 18h18" />
+                            <path d="M3 6h18" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- first -->
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px ";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight = "0px ") {
+                menuList.style.maxHeight = "500px ";
+            }
+            else {
+                menuList.style.maxHeight = "0px ";
+            }
+
+        }
+    </script>
+
+
+    <!-- search bar -->
+    <div class="2xl:container mx-auto">
+        <div
+            class="w-[90%] mx-auto md:justify-center sm:justify-center  md:mr-10  sm:items-center my-5 ml-10 flex gap-3">
+            <input aria-autocomplete="list" role="searchbox" aria-haspopup="true"
+                class="ng-tns-c48-14 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input border rounded-md text-center ng-star-inserted"
+                autocomplete="off" type="search" id="search" aria-controls="pr_id_11_list" aria-expanded="false"
+                aria-activedescendant="p-highlighted-option" placeholder="Search our products" size="35">
+            <button
+                class="bg-orange-400 text-white rounded-md p-1 hover:shadow-lg shadow-[0_0_5px] hover:transition-all duration-300 hover:scale-110"
+                id="Search">Search</button>
+
+            <!-- shopping Card -->
+            <div class="flex">
+                <a href="../Shopping_card.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-shopping-basket hover:text-orange-400 ml-15">
+                        <path d="m15 11-1 9" />
+                        <path d="m19 11-4-7" />
+                        <path d="M2 11h20" />
+                        <path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4" />
+                        <path d="M4.5 15.5h15" />
+                        <path d="m5 11 4-7" />
+                        <path d="m9 11 1 9" />
+                    </svg>
+                    <!-- <span class="cart-count">0</span> -->
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- womens care -->
+
+    <div class="2xl:container mx-auto bg-violet-100 p-3">
+        <h1 class="text-center font-bold p-3 text-5xl  text-violet-900">Womens Care</h1>
+        <div class="w-[99%] mx-auto">
+            <img src="../Assets/" alt="" class="">
+        </div>
+
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-5 ">
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/stayfree secure xl with wings 7 pads.jpg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold"> stayfree</h5>
+                        <p class="card-text shop-item-price text-center">Rs.3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/stayfreesecure regular dry cover with wings 7 pads.jpg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body mt-14">
+                        <h5 class="card-title shop-item-title text-center font-bold ">Stayfreesecure</h5>
+                        <p class="card-text shop-item-price text-center">Rs.3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/whisper maxi fit xl 15 pads.jpg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body mt-5">
+                        <h5 class="card-title shop-item-title text-center font-bold">whisper maxi fit xl</h5>
+                        <p class="card-text shop-item-price text-center">Rs.690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/whisper choice  wings 7 pads.jpg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold">whisper choice wings</h5>
+                        <p class="card-text shop-item-price text-center">Rs.3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/whisper ultra choice xl 6 pads.jpg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold">whisper ultra choice</h5>
+                        <p class="card-text shop-item-price text-center">Rs.3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/whisper ultra clean wings.jpg" class="card-img-top shop-item-image"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold">whisper ultra clean</h5>
+                        <p class="card-text shop-item-price text-center">Rs.3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-[99%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mt-5 ">
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/whisper ultra night xl wings.jpg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold"> whisper ultra night xl</h5>
+                        <p class="card-text shop-item-price text-center">Rs.3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/whisper ultra soft xl wings.jpg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold">whisper ultra soft xl wings</h5>
+                        <p class="card-text shop-item-price text-center">Rs 3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/whisper maxi night xl 15 pads.png"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold">whisper maxi night xl 15 </h5>
+                        <p class="card-text shop-item-price text-center">Rs 3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class=" col filter-item all offers space-y-2 rounded-xl bg-white shadow-lg p-5 hover:shadow-[0_0_15px]">
+                <div class="card h-100">
+                    <img src="../Assets/Womens care/wonderize dry comfort.jpeg" class="card-img-top shop-item-image"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title text-center font-bold">wonderize dry comfort</h5>
+                        <p class="card-text shop-item-price text-center">Rs 3690.00</p>
+                        <button type="button" style="width: 100%;"
+                            class="btn btn-warning mt-auto shop-item-button py-2  rounded-full  text-blue-50   bg-orange-500 cursor-pointer hover:text-black"><i
+                                class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Shopping Cart -->
+    <section class="container content-section" id="shopping-cart">
+
+        <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+
+        <table class="table table-hover table-cart">
+            <thead>
+                <tr class="flex gap-40">
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody class="cart-items">
+
+
+            </tbody>
+        </table>
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price" style="text-align: right;">$0</span>
+        </div>
+
+
+        <div class="btn-purchase" style="margin-top: 10%;">
+            <button type="button" class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping "
+                    style="margin-right: 6%;"></i>PURCHASE</button>
+        </div>
+
+    </section> 
+
+
+
+    <!-- js main -->
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
